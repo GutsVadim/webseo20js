@@ -11,6 +11,7 @@
     message = message.concat("!!!");
     var lCount = 0;
     var message2 = "";
+    var messageSep = "";
 
     for(var i = 0; i < message.length; i++) {
         console.log(message.charAt(i) + ": "
@@ -24,9 +25,12 @@
         if(i % 2 == 1) {
             message2 += message.charAt(i);
         }
+
+        messageSep += message.charAt(i) + "  ";
     }
     console.log(lCount);
     console.log(message2);
+    console.log(messageSep);
 
 
 </script>

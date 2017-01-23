@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        var a, b, operator, result;
+        
+        a = +prompt("Введите первое значение:");
+        b = +prompt("Введите второе значение:");
+        operator = prompt("Введите действие(+, -, *, /):");
+        
+        switch(operator) {
+            case "+":
+                result = a + b;
+                break;
+            case "-":
+                result = a - b;
+                break;
+            case "*":
+                result = a * b;
+                break;
+            case "/":
+                result = a / b;
+                break;
+            default:
+                result = "Не верный оператор!";
+                break;
+        }
+        
+        alert(result);
+    </script>
+    
+</body>
+</html>
